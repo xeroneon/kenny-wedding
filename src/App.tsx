@@ -1,5 +1,4 @@
-import { useQuery } from "@tanstack/react-query";
-
+import "./App.css";
 //const fetchReservations = async () => {
 //  const records = await pb.collection("reservations").getList(1, 50, {
 //    sort: "-created",
@@ -26,5 +25,9 @@ export default function App() {
   //  return <p>Error: {error.message}</p>;
   //}
 
-  return <main></main>;
+  return (
+    <main>
+      <h1 className="bg-red-500">alsdkfaslkdjf</h1>
+    </main>
+  );
 }
