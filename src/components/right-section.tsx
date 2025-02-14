@@ -1,12 +1,7 @@
-import React from "react"
-import { Button } from "@/components/ui/button"
+import React from "react";
+import { Button } from "@/components/ui/button";
 
 // Import your images
-import image1 from "../assets/wingding 2.jpg"
-import image2 from "../assets/wingding 3.jpg"
-import image3 from "../assets/wingding 4.jpg"
-import image4 from "../assets/wingding 5.jpg"
-import image5 from "../assets/wingding 6.jpg"
 
 export default function RightSection() {
   return (
@@ -38,33 +33,7 @@ export default function RightSection() {
       </p>
 
       {/* Images Row */}
-      <div className="flex flex-row flex-wrap gap-4 justify-center mt-6">
-        <img
-          src={image1}
-          alt="Jess & Kenny"
-          className="w-32 h-32 object-cover rounded-lg shadow-lg"
-        />
-        <img
-          src={image2}
-          alt="Jess & Kenny"
-          className="w-32 h-32 object-cover rounded-lg shadow-lg"
-        />
-        <img
-          src={image3}
-          alt="Jess & Kenny"
-          className="w-32 h-32 object-cover rounded-lg shadow-lg"
-        />
-        <img
-          src={image4}
-          alt="Jess & Kenny"
-          className="w-32 h-32 object-cover rounded-lg shadow-lg"
-        />
-        <img
-          src={image5}
-          alt="Jess & Kenny"
-          className="w-32 h-32 object-cover rounded-lg shadow-lg"
-        />
-      </div>
+      <div className="flex flex-row flex-wrap gap-4 justify-center mt-6"></div>
 
       {/* Where to Stay */}
       <div id="what-were-doing" className="flex flex-col gap-2 mt-6">
@@ -97,5 +66,5 @@ export default function RightSection() {
         </p>
       </div>
     </div>
-  )
+  );
 }

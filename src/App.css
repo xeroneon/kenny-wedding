@@ -4,6 +4,13 @@
 @tailwind utilities;
 
 @layer base {
+  @font-face {
+    font-family: "eaves";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/mrs-eaves-roman.woff2") format("woff2");
+  }
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 47.4% 11.2%;

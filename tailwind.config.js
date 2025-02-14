@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        mrsEaves: ["'Mrs Eaves'", "serif"],
+        eaves: ["eaves", "serif"],
       },
       colors: {
         border: "hsl(var(--border))",
