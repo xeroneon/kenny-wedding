@@ -2,8 +2,7 @@ import sunflower from "../assets/distressed.svg"; // Adjust path as needed
 
 export default function Header() {
   return (
-    <div className="relative w-2/3 flex flex-col items-center mt-10">
-      {/* Sunflower behind the text (absolute positioning) */}
+    <div className="relative flex flex-col items-center mt-10">
       <img
         src={sunflower}
         alt="Sunflower"
