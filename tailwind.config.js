@@ -5,8 +5,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        cormorant: "Cormorant",
-        playfair: "Playfair Display",
+        mrsEaves: ["'Mrs Eaves'", "serif"],
       },
       colors: {
         border: "hsl(var(--border))",
