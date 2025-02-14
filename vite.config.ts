@@ -4,6 +4,9 @@ import path from "path";
 
 // https://vite.dev/config/
 export default defineConfig({
+  server: {
+    allowedHosts: ['kincaidboydwedding.com', 'www.kincaidboydwedding.com'],
+  },
   plugins: [react()],
   resolve: {
     alias: {
