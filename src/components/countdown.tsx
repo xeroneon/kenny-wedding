@@ -41,7 +41,7 @@ function Countdown({ targetDate }: { targetDate: string }) {
   }
 
   return (
-    <div className="flex gap-4 font-mono text-sky-950 bg-[#9F8B48] py-4 min-w-96 rounded-2xl text-center justify-center">
+    <div className="flex gap-4 font-mono text-sky-950 bg-[#9F8B48] py-4 min-w-96 rounded-3xl text-center justify-center">
       <div className="flex flex-col">
         <span className="block text-5xl">{formatNumber(days)}</span>
         <span className="block text-lg">Days</span>
