@@ -6,7 +6,8 @@ export default function Header() {
       <img
         src={sunflower}
         alt="Sunflower"
-        className="absolute -left-24 -top-16 w-64"
+        className="absolute -left-24 -top-16 w-64 pointer-events-none"
+       
       />
 
       <h1 className="text-8xl text-center font-eaves z-10 text-blue-950">

@@ -3,25 +3,26 @@ import { Card, CardContent } from "@/components/ui/card";
 import Header from "./header";
 import EventDetails from "./event-details";
 import Countdown from "./countdown";
-import { Button } from "./ui/button";
+import RSVP from "./rsvp";
 
 export default function LeftSection() {
   return (
-    <div className="min-h-screen flex w-full">
+    <div className="w-full">
       <Card
         className="
+        rounded-none
         w-full
+       
         bg-[#E8E3D8]
         text-[#2E281F]
-        p-6
+       
       "
       >
-        <CardContent className="h-screen flex flex-col items-center font-eaves">
+        <CardContent className="flex flex-col  h-screen items-center font-eaves justify-around">
           <Header />
           <Countdown targetDate="2025-04-04T16:00:00" />
           <EventDetails />
-          <Button className="bg-sky-950">RSVP</Button>
-          <h2 className="text-sky-950 font-eaves">PLEASE RSVP BY APRIL 4th, 2025</h2>
+          <RSVP />
         </CardContent>
       </Card>
     </div>

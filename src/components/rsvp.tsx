@@ -1,40 +1,15 @@
-import React from "react"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 
-export default function RsvpSection() {
+export default function RSVP() {
   return (
     <div className="flex flex-col items-center mt-8 w-full">
-      {/* RSVP Button */}
-      <Button
-        className="
-          bg-blue-900 
-          text-white 
-          rounded-full 
-          px-8 py-3 
-          text-lg 
-          font-mrsEaves
-          tracking-wide
-        "
-      >
+  
+      <Button className="bg-sky-900 text-white w-32 h-12 text-2xl">
         RSVP
       </Button>
-
-      {/* Footer note: RSVP deadline */}
-      <p
-        className="
-          bg-blue-900 
-          text-white 
-          text-center 
-          mt-4 
-          w-full 
-          py-2 
-          text-sm 
-          font-semibold 
-          font-mrsEaves
-        "
-      >
+      <p className=" text-sky-950 text-center font-mrsEaves">
         PLEASE RSVP BY APRIL 4<sup>th</sup>, 2025
       </p>
     </div>
-  )
+  );
 }
