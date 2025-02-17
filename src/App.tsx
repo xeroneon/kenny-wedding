@@ -1,10 +1,14 @@
-import "./App.css"
+import "./App.css";
 
-import { Separator } from "@/components/ui/separator"
-import LeftSection from "./components/left-section"
-import RightSection from "./components/right-section"
+import { Separator } from "@/components/ui/separator";
+import LeftSection from "./components/left-section";
+import RightSection from "./components/right-section";
+import { useGuests } from "./hooks/useGuests";
+import { Toaster } from "./components/ui/toaster";
 
 function App() {
+  const { data, isLoading, isError, error } = useGuests();
+  console.log({ data });
   return (
     <>
       <Separator />
@@ -16,8 +20,9 @@ function App() {
           <RightSection />
         </div>
       </div>
+      <Toaster />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

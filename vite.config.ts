@@ -5,12 +5,15 @@ import path from "path";
 // https://vite.dev/config/
 export default defineConfig({
   server: {
-    allowedHosts: ['kincaidboydwedding.com', 'www.kincaidboydwedding.com'],
+    allowedHosts: ["kincaidboydwedding.com", "www.kincaidboydwedding.com"],
   },
-  plugins: [react()],
+  optimizeDeps: {
+    exclude: ["pocketbase", "@tanstack/react-query"],
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  plugins: [react()],
 });

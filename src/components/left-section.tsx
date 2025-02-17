@@ -12,10 +12,10 @@ export default function LeftSection() {
         className="
         rounded-none
         w-full
-       
+
         bg-[#E8E3D3]
         text-sky-950
-       
+
       "
       >
         <CardContent className="flex flex-col  h-screen items-center font-eaves justify-around">
