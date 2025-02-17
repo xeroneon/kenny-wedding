@@ -13,8 +13,8 @@ export default function LeftSection() {
         rounded-none
         w-full
        
-        bg-[#E8E3D8]
-        text-[#2E281F]
+        bg-[#E8E3D3]
+        text-sky-950
        
       "
       >
