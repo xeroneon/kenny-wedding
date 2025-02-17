@@ -19,15 +19,16 @@ export default function EventDetails() {
                 <span className='text-sky-950 font-bold'>5:00 PM - 7:00 PM</span>.
             </p>
 
+        
+
+            <p>
+                <strong>Dress Code:</strong> <span className='text-dark-gold'>Semi-Formal</span>
+            </p>
             <p>
                 <em>
                     We kindly remind our guests, due to capacity limits at our ceremony & reception, we have elected to limit our
                     ceremony & reception to adults only.
                 </em>
-            </p>
-
-            <p>
-                <strong>Dress Code:</strong> <span className='text-dark-gold'>Semi-Formal</span>
             </p>
         </div>
     );

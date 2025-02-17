@@ -1,44 +1,39 @@
-import React from "react";
-import { Button } from "@/components/ui/button";
-import Footer from "./footer";
+import Navbar from "./navbar";
+import HowWeGotHere from "./how-we-got-here";
+import WeddingParty from "./wedding-party";
+import ThingsToDo from "./things-to-do";
+import HoneymoonFund from "./honeymoon-fund";
 import { PhotoCarousel } from "./photo-carousel";
-
-// Import your images
+import Footer from "./footer";
 
 export default function RightSection() {
   return (
-    <div className="flex flex-col h-screen justify-between bg-sky-800 text-gray-800">
-      <div className="gap-6 text-md leading-relaxed font-eaves p-6 text-white">
-        <h2
-          id="how-we-got-here"
-          className="text-3xl font-bold underline underline-offset-4"
-        >
-          How We Got Here
-        </h2>
-        <p>
-          A tale as old as time: boy and girl both *heart* one another on Hinge
-          (or un-Hinged if you ask Jess), boy and girl chat on the app then
-          exchange numbers. Boy asks girl out on brunch date. Girl almost bails
-          when boy changes plans to Friday night drinks and girl agrees. They
-          have their first date in downtown Benicia at First Street Taphouse…
-        </p>
-        <p>
-          Fast forward a few months later and they are officially dating and
-          living together with the most American (even more American than the
-          mullet Kenny was rocking) anniversary of July 4th, 2023. They went
-          through a lot as a couple in a short amount of time, both happy and
-          sad, which only strengthened their bond and love for each other.
-        </p>
-        <p>
-          And on January 4th, 2025, Kenny proposed and here we are, getting
-          ready for the big day on May 24th, 2025! The adventure is only just
-          beginning!
-        </p>
+    <div className="flex flex-col min-h-screen bg-sky-800 text-white font-eaves">
+      <Navbar />
+      <div className="flex justify-center">
+      <img
+  src="src/assets/lodge.jpg"
+  alt="hero"
+  className="w-full h-96 object-cover object-center"
+/>
+        </div>
+      <div className="flex-grow overflow-y-auto p-6 space-y-12 max-w-4xl mx-auto">
+        
+        
+        <section id="how-we-got-here" className="space-y-4">
+          <HowWeGotHere />
+          <div className="flex justify-center">
+            <PhotoCarousel />
+          </div>
+        </section>
+        <section id="what-were-doing" className="space-y-4">
+          <WeddingParty />
+        </section>
+        <section id="where-were-going" className="space-y-4">
+          <ThingsToDo />
+          <HoneymoonFund />
+        </section>
       </div>
-      <div className="flex flex-col items-center gap-6 p-6 text-white">
-      <PhotoCarousel />
-      </div>
-
       <Footer />
     </div>
   );
