@@ -20,7 +20,7 @@ export default function LeftSection() {
       >
         <CardContent className="flex flex-col  h-screen items-center font-eaves justify-around">
           <Header />
-          <Countdown targetDate="2025-04-04T16:00:00" />
+          <Countdown targetDate="2025-05-24T16:00:00" />
           <EventDetails />
           <RSVP />
         </CardContent>

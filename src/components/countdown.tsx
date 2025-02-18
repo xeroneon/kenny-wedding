@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 
 function Countdown({ targetDate }: { targetDate: string }) {
-  const [timeRemaining, setTimeRemaining] = useState(getTimeRemaining(targetDate));
+  const [timeRemaining, setTimeRemaining] = useState(
+    getTimeRemaining(targetDate),
+  );
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -11,10 +13,10 @@ function Countdown({ targetDate }: { targetDate: string }) {
   }, [targetDate]);
 
   function getTimeRemaining(target: string) {
-    const totalSeconds = Math.max(
-      0,
-      Math.floor((new Date(target).getTime() - new Date().getTime()) / 1000)
-    );
+    const targetDate = new Date(target).getTime();
+    const now = new Date().getTime();
+
+    const totalSeconds = Math.max(0, Math.floor((targetDate - now) / 1000));
     const days = Math.floor(totalSeconds / (60 * 60 * 24));
     const hours = Math.floor((totalSeconds % (60 * 60 * 24)) / (60 * 60));
     const minutes = Math.floor((totalSeconds % (60 * 60)) / 60);
