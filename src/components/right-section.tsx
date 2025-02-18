@@ -12,7 +12,7 @@ export default function RightSection() {
       <Navbar />
       <div className="flex justify-center">
       <img
-  src="src/assets/lodge.jpg"
+  src="/assets/lodge.jpg"
   alt="hero"
   className="w-full h-96 object-cover object-center"
 />

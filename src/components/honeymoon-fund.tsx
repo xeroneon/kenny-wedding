@@ -23,7 +23,7 @@ export default function HoneymoonFund() {
                 </p>
                 <p>
                     
-                    <img src="src/assets/venmo.png" alt="Venmo" className="max-h-48 inline" />
+                    <img src="/assets/venmo.png" alt="Venmo" className="max-h-48 inline" />
                 </p>
             </div>
         </section>
