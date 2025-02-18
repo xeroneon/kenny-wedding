@@ -72,7 +72,7 @@ export function RSVPDialog() {
       <DialogTrigger asChild>
         <Button
           type="button"
-          className="bg-sky-900 text-white w-32 h-12 text-2xl pb-0"
+          className="bg-sky-900 text-white w-32 h-12 text-2xl"
         >
           RSVP
         </Button>
