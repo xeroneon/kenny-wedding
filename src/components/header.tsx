@@ -6,15 +6,17 @@ export default function Header() {
       <img
         src={sunflower}
         alt="Sunflower"
-        className="absolute -left-24 -top-16 w-64 pointer-events-none"
+        className="absolute -left-24 -top-16 w-56 pointer-events-none"
       />
 
-      <h1 className="text-6xl md:text-8xl text-center font-eaves z-10 text-blue-950">
+      <h1 className="text-6xl md:text-6xl text-center font-eaves z-10 text-blue-950">
         JESSICA
         <br /> &amp; <br />
         KENNY
       </h1>
-      <p className="text-2xl  md:text-3xl font-eaves text-blue-950">Are Getting Married!</p>
+      <p className="text-2xl  md:text-3xl font-eaves text-blue-950">
+        Are Getting Married!
+      </p>
     </div>
   );
 }
