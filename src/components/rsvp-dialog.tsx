@@ -122,6 +122,9 @@ export function RSVPDialog() {
                 <SelectItem value="Grilled New York Steak">
                   Grilled New York Steak
                 </SelectItem>
+                <SelectItem value="Can't Attend">
+                  Can't Attend
+                </SelectItem>
               </SelectContent>
             </Select>
           </div>
