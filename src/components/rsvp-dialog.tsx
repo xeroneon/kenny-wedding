@@ -133,7 +133,7 @@ export function RSVPDialog() {
             <Label htmlFor="restrictions" className="text-right">
               Dietary Restrictions
             </Label>
-            <Input onChange={(e) => setRestrictions(e.target.value)} />
+            <Input placeholder="Enter your dietary restrictions here or if you cant make it to the wedding, you can choose to write a note for the bride and groom here instead." onChange={(e) => setRestrictions(e.target.value)} />
           </div>
         </div>
         <DialogFooter>
