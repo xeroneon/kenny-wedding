@@ -113,7 +113,7 @@ export function RSVPDialog() {
             </Label>
             <Select onValueChange={(e) => setChoice(e)}>
               <SelectTrigger className="w-full">
-                <SelectValue placeholder="Entree Choice" />
+                <SelectValue placeholder="Choose Entree or Decline Invitation" />
               </SelectTrigger>
               <SelectContent className="w-full">
                 <SelectItem value="Cedar-Plank Roasted Salmon">
