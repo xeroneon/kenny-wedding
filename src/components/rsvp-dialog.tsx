@@ -7,7 +7,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
+// import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useGuests } from "@/hooks/useGuests";
 import {
@@ -133,7 +133,13 @@ export function RSVPDialog() {
             <Label htmlFor="restrictions" className="text-right">
               Dietary Restrictions
             </Label>
-            <Input placeholder="Enter your dietary restrictions here or if you cant make it to the wedding, you can choose to write a note for the bride and groom here instead." onChange={(e) => setRestrictions(e.target.value)} />
+              <textarea
+    id="restrictions"
+    rows={4} 
+    placeholder="Enter your dietary restrictions here or if you can’t make it to the wedding, you can write a note for the bride and groom here instead."
+    onChange={(e) => setRestrictions(e.target.value)}
+    className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 resize-y"
+  />
           </div>
         </div>
         <DialogFooter>
